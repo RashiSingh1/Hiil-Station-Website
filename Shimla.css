@@ -14,33 +14,19 @@ body {
 .hero {
   position: relative;
   height: 75vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/shimla02.webp");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 100px;
   padding-top: 140px;
+
   color: white;
-}
-.hero-shimla{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/shimla02.webp") center/cover no-repeat;
-}
-.hero-ooty{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/ooty2.webp") center/cover no-repeat;
-}
-.hero-leh{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/leh-background(3).jpg") center/cover no-repeat;
-}
-.hero-coorg{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/coakers.webp") center/cover no-repeat;
-}
-.hero-gulmarg{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/gulmarg01.jfif") center/cover no-repeat;
-}
-.hero-pangiValley{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/pangi02.webp") center/cover no-repeat;
-}
-.hero-kodaikanal{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/kodaikanallb.jpg") center/cover no-repeat;
 }
 .overlay {
   position: absolute;
