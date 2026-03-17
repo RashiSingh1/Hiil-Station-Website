@@ -350,3 +350,135 @@ border-radius:10px;
 .social-icons {
   margin-left: 15px;
 }
+/* ========================= */
+/* 💻 Tablets (<= 992px) */
+/* ========================= */
+@media (max-width: 992px) {
+
+  .hero {
+    padding-left: 40px;
+    padding-top: 100px;
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .overlay {
+    display: none; /* useless on small screens */
+  }
+
+  .text-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .place {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .place img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .text p {
+    color: #ccc;
+  }
+
+  .list {
+    margin: 50px 20px;
+  }
+
+  .gallery h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .time-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ========================= */
+/* 📱 Mobile (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 80px 20px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .gallery {
+    padding: 30px 20px;
+  }
+
+  .gallery-scroll img {
+    width: 250px;
+    height: 160px;
+  }
+
+  .time-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .best-time {
+    padding: 30px 20px;
+  }
+
+  .travel-tips {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+}
+
+
+/* ========================= */
+/* 📱 Small Mobile (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .gallery-scroll img {
+    width: 200px;
+    height: 140px;
+  }
+
+  .tip-card {
+    padding: 25px 15px;
+  }
+
+}
