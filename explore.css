@@ -42,6 +42,9 @@ body {
 .hero-kodaikanal{
   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/kodaikanallb.jpg") center/cover no-repeat;
 }
+.hero-kalpa{
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/kalpa02.avif") center/cover no-repeat;
+}
 .overlay {
   position: absolute;
   top: 70px;
@@ -350,9 +353,7 @@ border-radius:10px;
 .social-icons {
   margin-left: 15px;
 }
-/* ========================= */
-/* 💻 Tablets (<= 992px) */
-/* ========================= */
+
 @media (max-width: 992px) {
 
   .hero {
@@ -408,9 +409,6 @@ border-radius:10px;
 }
 
 
-/* ========================= */
-/* 📱 Mobile (<= 768px) */
-/* ========================= */
 @media (max-width: 768px) {
 
   .hero {
@@ -457,11 +455,6 @@ border-radius:10px;
   }
 
 }
-
-
-/* ========================= */
-/* 📱 Small Mobile (<= 480px) */
-/* ========================= */
 @media (max-width: 480px) {
 
   .hero h1 {
