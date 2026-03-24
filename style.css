@@ -115,7 +115,6 @@ p{
   gap: 30px;
 }
 
-/* GLASS CARD */
 .why-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -168,7 +167,7 @@ p{
 
 .cta button:hover {
   transform: scale(1.1);
-  box-shadow:  rgba(0,245,196,0.4);
+  box-shadow: 0 0 20px rgba(0, 245, 196, 0.4); 
 }
 
 .footer {

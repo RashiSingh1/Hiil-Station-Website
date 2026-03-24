@@ -1,16 +1,20 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: black;
- font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
+/* ─── HERO ───────────────────────────────────── */
+
 .hero {
   position: relative;
   height: 75vh;
@@ -21,33 +25,52 @@ body {
   padding-top: 140px;
   color: white;
 }
-.hero-shimla{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/shimla02.webp") center/cover no-repeat;
+
+.hero-shimla {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/shimla02.webp") center / cover no-repeat;
 }
-.hero-ooty{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/ooty2.webp") center/cover no-repeat;
+
+.hero-ooty {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/ooty2.webp") center / cover no-repeat;
 }
-.hero-leh{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/leh-background(3).jpg") center/cover no-repeat;
+
+.hero-leh {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/leh-background(3).jpg") center / cover no-repeat;
 }
-.hero-coorg{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/coakers.webp") center/cover no-repeat;
+
+.hero-coorg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/coakers.webp") center / cover no-repeat;
 }
-.hero-gulmarg{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/gulmarg01.jfif") center/cover no-repeat;
+
+.hero-gulmarg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/gulmarg01.jfif") center / cover no-repeat;
 }
-.hero-pangiValley{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/pangi02.webp") center/cover no-repeat;
+
+.hero-pangiValley {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/pangi02.webp") center / cover no-repeat;
 }
-.hero-kodaikanal{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/kodaikanallb.jpg") center/cover no-repeat;
+
+.hero-kodaikanal {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/kodaikanallb.jpg") center / cover no-repeat;
 }
-.hero-kalpa{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/kalpa02.avif") center/cover no-repeat;
+
+.hero-kalpa {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/kalpa02.avif") center / cover no-repeat;
 }
-.hero-pahalgam{
-  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("Images/pahalgam06.jpg") center/cover no-repeat;
+
+.hero-pahalgam {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/pahalgam06.jpg") center / cover no-repeat;
 }
+
 .overlay {
   position: absolute;
   top: 70px;
@@ -55,20 +78,29 @@ body {
   width: 34vw;
   border-radius: 10px;
 }
-
 .hero h1 {
-  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 90px;
+  background: linear-gradient(90deg, #178f77, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .hero p {
   padding-top: 17px;
   font-size: 20px;
   line-height: 1.5;
   color: white;
 }
+
 .text-container {
   margin-left: 100px;
   max-width: 500px;
 }
+
+/* ─── SECTION HEADING ────────────────────────── */
+
 .heading {
   padding-top: 30px;
   padding-left: 30px;
@@ -77,27 +109,24 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+/* ─── ATTRACTIONS LIST ───────────────────────── */
+
 .attraction img {
   width: 15%;
   height: 335px;
   object-fit: cover;
   border-radius: 8px;
 }
+
 .list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 0px;
+  gap: 0;
   margin: 100px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 10px;
 }
 
-.place img {
-  width: 70%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
-}
 .place {
   display: flex;
   align-items: center;
@@ -105,36 +134,55 @@ body {
   padding: 16px;
 }
 
-.text h2 {
-  color: white;
-  font-size: 30px;
-}
-.text p {
-  color: rgb(0, 0, 0);
-  margin-top: 10px;
-  line-height: 1.6;
+/* FIX: width changed from 60% (relative, inconsistent) to fixed 480px
+   so every attraction image is exactly the same size across all pages,
+   regardless of the image's original dimensions or aspect ratio. */
+.place img {
+  width: 590px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
-.place img {
-  width: 60%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
+
+.text h2 {
+  color: white;
+  font-size: 30px;
 }
+
+/* FIX: was 'color: rgb(0, 0, 0)' — black text on a dark background, invisible.
+   Changed to a light colour so paragraphs are actually readable by default. */
+.text p {
+  color: #000000;
+  margin-top: 10px;
+  line-height: 1.6;
+  transition: color 0.4s, transform 0.4s;
+}
+
 .place p:hover {
   color: white;
-  transition: 0.4s;
   transform: scale(1.05);
   cursor: cell;
 }
+
+/* ─── GALLERY ────────────────────────────────── */
+
 .gallery {
   color: white;
   padding: 60px;
   background-color: #1d1a1a;
   border-radius: 17px;
+  margin-top: 60px;
+}
+
+.gallery h1 {
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .gallery-scroll {
@@ -142,6 +190,21 @@ body {
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
 }
 
 .gallery-scroll img {
@@ -150,12 +213,15 @@ body {
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.gallery h1 {
-  padding-bottom: 30px;
-  margin-left: 80vh;
+.gallery-scroll img:hover {
+  transform: scale(1.04);
+  opacity: 0.9;
 }
+
+
 .best-time {
   color: white;
   padding: 50px;
@@ -168,7 +234,39 @@ body {
   gap: 20px;
 }
 
-.highlight li:before {
+.time-card {
+  background-color: rgba(255, 255, 255, 0.178);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.time-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-heading {
+  background-color: #393535;
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  list-style: none;
+  padding: 20px;
+}
+
+.highlight li {
+  padding: 5px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.highlight li::before {
   content: "✓";
   position: absolute;
   left: 0;
@@ -176,36 +274,6 @@ body {
   font-weight: bold;
 }
 
-.time-card h2 {
-  padding-bottom: 10px;
-}
-.highlight {
-  list-style: none;
-  padding: 20px;
-}
-.highlight li {
-  padding: 5px 0;
-  padding-left: 25px;
-  position: relative;
-}
-.time-card{
-background-color: rgba(255, 255, 255, 0.178);
-padding:20px;
-border-radius:10px;
-}
-.time-card :hover {
-  transform: scale(1.06);
-  transition:
-    transform 0.3s ease-in-out,
-    box-shadow ease;
-}
-.card-heading {
-  background-color: #393535;
-  padding-left: 16px;
-  padding-top: 14px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-}
 
 .travel-tips {
   padding: 71px 10%;
@@ -225,11 +293,12 @@ border-radius:10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+
 .tip-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 35px 25px;
   border-radius: 15px;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, border-color 0.4s ease, background 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -251,9 +320,10 @@ border-radius:10px;
 
 .tip-card:hover {
   transform: translateY(-10px);
-  border: 1px solid #00d084;
+  border-color: #00d084;
   background: rgba(255, 255, 255, 0.08);
 }
+
 
 .leh-footer {
   background: #0a0a0a;
@@ -271,11 +341,7 @@ border-radius:10px;
   gap: 40px;
 }
 
-.leh-footer h2 {
-  color: white;
-  margin-bottom: 15px;
-}
-
+.leh-footer h2,
 .leh-footer h3 {
   color: white;
   margin-bottom: 15px;
@@ -297,7 +363,7 @@ border-radius:10px;
 .leh-footer ul li a {
   text-decoration: none;
   color: #bbb;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .leh-footer ul li a:hover {
@@ -305,27 +371,28 @@ border-radius:10px;
 }
 
 .social-icons a {
-  font-size: 20px;
-  margin-right: 15px;
+  font-size: 22px;
+  margin-right: 18px;
   margin-left: 10px;
+  color: #bbb;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
+  color: #00c896;
   transform: translateY(-4px);
 }
 
-.footer-bottom {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 14px;
-  color: #aaa;
+.social-icons {
+  margin-left: 15px;
 }
+
 .footer-links a {
   position: relative;
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
 }
 
 .footer-links a::after {
@@ -336,29 +403,27 @@ border-radius:10px;
   background: #00c896;
   left: 0;
   bottom: -3px;
-  transition: 0.3s;
+  transition: width 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00c896;
 }
 
 .footer-links a:hover::after {
   width: 100%;
 }
-.social-icons a {
-  font-size: 22px;
-  margin-right: 18px;
-  color: #bbb;
-  transition: 0.3s;
-}
 
-.social-icons a:hover {
-  color: #00c896;
-  transform: translateY(-4px);
-}
-.social-icons {
-  margin-left: 15px;
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+  color: #aaa;
 }
 
 @media (max-width: 992px) {
-
   .hero {
     padding-left: 40px;
     padding-top: 100px;
@@ -374,7 +439,7 @@ border-radius:10px;
   }
 
   .overlay {
-    display: none; /* useless on small screens */
+    display: none;
   }
 
   .text-container {
@@ -392,31 +457,20 @@ border-radius:10px;
     height: 250px;
   }
 
-  .text p {
-    color: #ccc;
-  }
-
   .list {
     margin: 50px 20px;
-  }
-
-  .gallery h1 {
-    margin-left: 0;
-    text-align: center;
   }
 
   .time-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
-
 @media (max-width: 768px) {
-
   .hero {
     padding: 80px 20px;
     height: auto;
+    min-height: 50vh;
   }
 
   .hero h1 {
@@ -456,10 +510,9 @@ border-radius:10px;
   .section-title {
     font-size: 28px;
   }
-
 }
-@media (max-width: 480px) {
 
+@media (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
   }
@@ -476,5 +529,4 @@ border-radius:10px;
   .tip-card {
     padding: 25px 15px;
   }
-
 }
