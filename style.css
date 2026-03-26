@@ -11,18 +11,19 @@ image {
     height: auto;   
      
 }
-nav {
-    max-width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 0px 50px 0px 100px;
-    align-items: center;
-    min-height: 50px;        /* was: height: 50px  */
-    flex-wrap: wrap;         /* NEW: buttons wrap instead of overflow */
-    padding: 20px 0 20px 0; /* replaces top: 20px + padding-bottom: 50px */
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
 }
-
+nav div{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .headerButtons{
     
     height:30px;
@@ -275,18 +276,31 @@ p{
 
 
 @media (max-width: 768px) {
-nav {
-    margin: 0 20px;
-    height: auto;      /* ADD */
-    padding: 15px 0;   /* ADD */
-    flex-wrap: wrap;   /* ADD */
-}
 
-  .headerButtons {
-    font-size: 12px;
-    padding: 5px 8px;
+
+@media (max-width: 768px) {
+ nav{
+                padding: 0px 0px;
+                            margin: 0;
+gap:0px
+  }
+
+  nav span img{
+    width: 130px;
+  }
+
+  nav div{
+               gap: 0px;
+               margin-right: 6px;
+  }
+
+  .headerButtons{
+    font-size: 10px;
+    padding: 5px 7px;
     height: auto;
   }
+
+}
 
   .Info {
     padding: 30px 20px;
