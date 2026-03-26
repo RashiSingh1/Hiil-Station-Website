@@ -11,16 +11,16 @@ image {
     height: auto;   
      
 }
-nav{
+nav {
     max-width: 80vw;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin: 0px 50px 0px 100px;
-  align-items: center;
-  height: 50px;
-  top: 20px;
-  padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px 50px 0px 100px;
+    align-items: center;
+    min-height: 50px;        /* was: height: 50px  */
+    flex-wrap: wrap;         /* NEW: buttons wrap instead of overflow */
+    padding: 20px 0 20px 0; /* replaces top: 20px + padding-bottom: 50px */
 }
 
 .headerButtons{
@@ -275,10 +275,12 @@ p{
 
 
 @media (max-width: 768px) {
-
-  nav {
+nav {
     margin: 0 20px;
-  }
+    height: auto;      /* ADD */
+    padding: 15px 0;   /* ADD */
+    flex-wrap: wrap;   /* ADD */
+}
 
   .headerButtons {
     font-size: 12px;
