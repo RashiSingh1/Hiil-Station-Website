@@ -1,0 +1,532 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 100px;
+  padding-top: 140px;
+  color: white;
+}
+
+.hero-shimla {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/shimla02.webp") center / cover no-repeat;
+}
+
+.hero-ooty {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/ooty2.webp") center / cover no-repeat;
+}
+
+.hero-leh {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/leh-background(3).jpg") center / cover no-repeat;
+}
+
+.hero-coorg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/coakers.webp") center / cover no-repeat;
+}
+
+.hero-gulmarg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/gulmarg01.jfif") center / cover no-repeat;
+}
+
+.hero-pangiValley {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/pangi02.webp") center / cover no-repeat;
+}
+
+.hero-kodaikanal {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/kodaikanallb.jpg") center / cover no-repeat;
+}
+
+.hero-kalpa {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/kalpa02.avif") center / cover no-repeat;
+}
+
+.hero-pahalgam {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("Images/pahalgam06.jpg") center / cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  right: 204px;
+  width: 34vw;
+  border-radius: 10px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 90px;
+  background: linear-gradient(90deg, #178f77, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  padding-top: 17px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+}
+
+.text-container {
+  margin-left: 100px;
+  max-width: 500px;
+}
+
+
+.heading {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  color: rgb(255, 245, 245);
+  font-family: "Outfit", sans-serif;
+}
+
+
+.attraction img {
+  width: 15%;
+  height: 335px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+  margin: 100px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 16px;
+}
+
+.place img {
+  width: 590px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.text p {
+  color: #000000;
+  margin-top: 10px;
+  line-height: 1.6;
+  transition: color 0.4s, transform 0.4s;
+}
+
+.place p:hover {
+  color: white;
+  transform: scale(1.05);
+  cursor: cell;
+}
+
+
+.gallery {
+  color: white;
+  padding: 60px;
+  background-color: #1d1a1a;
+  border-radius: 17px;
+  margin-top: 60px;
+}
+
+.gallery h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.gallery-scroll img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-scroll img:hover {
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+
+.best-time {
+  color: white;
+  padding: 50px;
+  padding-left: 40px;
+}
+
+.time-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.time-card {
+  background-color: rgba(255, 255, 255, 0.178);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.time-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-heading {
+  background-color: #393535;
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  list-style: none;
+  padding: 20px;
+}
+
+.highlight li {
+  padding: 5px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.highlight li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #49bd8d;
+  font-weight: bold;
+}
+
+
+.travel-tips {
+  padding: 71px 10%;
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 35px 25px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tip-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.tip-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tip-card p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  border-color: #00d084;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.leh-footer {
+  background: #0a0a0a;
+  color: #ddd;
+  padding-top: 60px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.leh-footer h2,
+.leh-footer h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.leh-footer p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.leh-footer ul {
+  list-style: none;
+}
+
+.leh-footer ul li {
+  margin-bottom: 10px;
+}
+
+.leh-footer ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.leh-footer ul li a:hover {
+  color: #00c896;
+}
+
+.social-icons a {
+  font-size: 22px;
+  margin-right: 18px;
+  margin-left: 10px;
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00c896;
+  transform: translateY(-4px);
+}
+
+.social-icons {
+  margin-left: 15px;
+}
+
+.footer-links a {
+  position: relative;
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00c896;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00c896;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding-left: 40px;
+    padding-top: 100px;
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .text-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .place {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .place img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .list {
+    margin: 50px 20px;
+  }
+
+  .time-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+    height: auto;
+    min-height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+.place img{
+        width: 113%;
+        height: 207px;
+  
+}
+  .hero p {
+    font-size: 1px;
+  }
+.text p{
+  font-size: 13px;
+}
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .gallery {
+    padding: 30px 20px;
+  }
+
+  .gallery-scroll img {
+    width: 250px;
+    height: 160px;
+  }
+
+  .time-cards {
+    grid-template-columns: 1fr;
+  }
+  .time-card{
+    padding: 9px;
+  }
+
+  .best-time {
+    padding: 30px 20px;
+  }
+
+  .travel-tips {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .gallery-scroll img {
+    width: 200px;
+    height: 140px;
+  }
+
+  .tip-card {
+    padding: 25px 15px;
+  }
+}
